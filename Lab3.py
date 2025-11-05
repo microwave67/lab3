@@ -1,10 +1,23 @@
 print("Lab 3 - Software Unit Testing with PyTest")
 
+from array import array
+
 SORT_ASCENDING = 0
 SORT_DESCENDING = 1
 
 
 def bubble_sort(arr, sorting_order):
+
+    for var in arr:
+        flag = 0
+        if type(var) != int:
+            return (2)
+
+    if len(arr) >= 10:
+        return 1
+    
+    if len(arr) == 0:
+        return 0
 
     # Copy input list to results list
     arr_result = arr.copy()
