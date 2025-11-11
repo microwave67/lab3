@@ -9,7 +9,6 @@ SORT_DESCENDING = 1
 def bubble_sort(arr, sorting_order):
 
     for var in arr:
-        flag = 0
         if type(var) != int:
             return (2)
 
